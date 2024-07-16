@@ -22,6 +22,9 @@ const AppBar = () => {
         <Link to="/">
           <Text>Home</Text>
         </Link>
+        <Link to="/createuser">
+          <Text>Create User</Text>
+        </Link>
         <Link to="/signin">
           <Text>Sign In</Text>
         </Link>

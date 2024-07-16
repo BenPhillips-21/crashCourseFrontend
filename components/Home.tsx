@@ -1,11 +1,10 @@
 import { StyleSheet, View, Text } from 'react-native';
-import { ThemedText } from '@/components/ThemedText';
-import { useQuery } from '@apollo/client';
-import { GET_ALL_ACCIDENTS } from '../graphql/queries';
+// import UseAuthStorage from '../hooks/UseAuthStorage';
 
-export default function Home() {
-  const { data, error, loading } = useQuery(GET_ALL_ACCIDENTS);
-  console.log(data)
+
+
+export default async function Home() {
+  // const authStorage = UseAuthStorage();
   return (
     <View
       style={{

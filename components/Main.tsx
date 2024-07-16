@@ -2,7 +2,8 @@ import { StyleSheet, View, Text } from 'react-native';
 import AppBar from './AppBar'
 import { Route, Routes, Navigate } from 'react-router-native';
 import Home from './Home';
-import OtherPage from './SignIn';
+import CreateUser from './CreateUser'
+import SignIn from './SignIn';
 
 const styles = StyleSheet.create({
   container: {
@@ -17,7 +18,8 @@ const Main = () => {
     <AppBar />
       <Routes>        
         <Route path="/" element={<Home />} />   
-        <Route path="/signin" element={<OtherPage />} />
+        <Route path="/createuser" element={<CreateUser />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </View>
   );
